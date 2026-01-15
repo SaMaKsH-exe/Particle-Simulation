@@ -10,8 +10,6 @@ Inspired by [this video](https://www.youtube.com/watch?v=7CM0dbib-Jw&t).
 
 Download the latest Windows executable from [Releases](https://github.com/SaMaKsH.exe/Particle-Simulation/releases) for a quick preview, no build needed.
 
-## For developers (build from source)
-
 - Prerequisites:
 
   - gcc
