@@ -1,7 +1,7 @@
 #include "raylib.h"
 #include <time.h>
 
-#define num_particles 15
+#define num_particles 30
 #define screenWidth 800
 #define screenHeight 600
 
@@ -35,7 +35,7 @@ void UpdateParticle(Particle *particle){
         particle->vy = -particle->vy;
     }
 
-}
+    }
 
 void DrawParticle(Particle *particle){
 
