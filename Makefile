@@ -1,6 +1,7 @@
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
+# Extra warning flags for stricter checks (useful for contributors)
+CFLAGS = -Wall -Wextra -Wpedantic -Wshadow -Wconversion -std=c99
 LIBS = -lraylib -lopengl32 -lgdi32 -lwinmm
 
 # Target executable

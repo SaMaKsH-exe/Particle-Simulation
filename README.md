@@ -6,22 +6,26 @@ A basic particle simulation in C using raylib.
 
 Inspired by [this video](https://www.youtube.com/watch?v=7CM0dbib-Jw&t).
 
-## Download
+## Preview (no build)
 
-Download the latest Windows executable from [Releases](https://github.com/yourusername/Particle-Simulation/releases).
+Download the latest Windows executable from [Releases](https://github.com/SaMaKsH.exe/Particle-Simulation/releases) for a quick preview, no build needed.
 
-## Prerequisites
+## For developers (build from source)
 
-- gcc
-- [raylib](https://www.raylib.com/)
+- Prerequisites:
 
-## Run
+  - gcc
+  - raylib
+
+- Run (build and run):
 
 ```bash
+make
 make run
 ```
 
-## Requirements
+- Quick compile (no `make` required):
 
-- gcc
-- raylib
+```bash
+gcc -Wall -Wextra -Wpedantic -Wshadow -Wconversion -std=c99 main.c -o particle_sim.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+```
