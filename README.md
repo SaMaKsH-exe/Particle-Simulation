@@ -1,19 +1,19 @@
 
-# 🌌 Particle Collision Simulator
+# Particle Collision Simulator
 
 A particle physics simulation built with C/raylib. 
 
-## 🚀 Quick Start
+##  Quick Start
 
-### 🌐 Try Web Version (No Installation)
+### Try Web Version (No Installation)
 
 https://samaksh-exe.github.io/Particle-Simulation/dist/particle_sim.html
 
-### 💻 Download EXE Version
+###  Download EXE Version
 
 Download the latest Windows executable from [Releases](https://github.com/SaMaKsH-exe/Particle-Simulation/releases)
 
-## 🛠️ Build from Source
+##  Build from Source
 
 ### Prerequisites
 
@@ -39,7 +39,7 @@ Or compile manually:
 gcc -Wall -Wextra -Wpedantic -Wshadow -Wconversion -std=c99 main.c -o particle_sim.exe -lraylib -lopengl32 -lgdi32 -lwinmm
 ```
 
-## 🎮 Controls
+## Controls
 
 | Key   | Action                       |
 | ----- | ---------------------------- |
