@@ -7,7 +7,7 @@ A particle physics simulation built with C/raylib.
 
 ### 🌐 Try Web Version (No Installation)
 
-Open [dist/particle_sim.html](dist/particle_sim.html) in your browser for instant access.
+https://samaksh-exe.github.io/Particle-Simulation/dist/particle_sim.html
 
 ### 💻 Download EXE Version
 
