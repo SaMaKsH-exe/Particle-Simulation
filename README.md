@@ -1,29 +1,51 @@
-<!-- @format -->
 
-# Particle-Simulation
+# 🌌 Particle Collision Simulator
 
-A basic particle simulation in C using raylib.
+A particle physics simulation built with C/raylib. 
 
-Inspired by [this video](https://www.youtube.com/watch?v=7CM0dbib-Jw&t).
+## 🚀 Quick Start
 
-## Preview (no build)
+### 🌐 Try Web Version (No Installation)
 
-Download the latest Windows executable from [Releases](https://github.com/SaMaKsH.exe/Particle-Simulation/releases) for a quick preview, no build needed.
+Open [dist/particle_sim.html](dist/particle_sim.html) in your browser for instant access.
 
-- Prerequisites:
+### 💻 Download EXE Version
 
-  - gcc
-  - raylib
+Download the latest Windows executable from [Releases](https://github.com/SaMaKsH.exe/Particle-Simulation/releases)
 
-- Run (build and run):
+## 🛠️ Build from Source
+
+### Prerequisites
+
+- GCC compiler
+- raylib library (included in repo)
+- mingw64 (Windows)
+- Git
+
+### Clone and Build
 
 ```bash
-make
+# Clone the repository
+git clone https://github.com/SaMaKsH.exe/Particle-Simulation.git
+cd Particle-Simulation
+
+# Build and run
 make run
 ```
 
-- Quick compile (no `make` required):
+Or compile manually:
 
 ```bash
 gcc -Wall -Wextra -Wpedantic -Wshadow -Wconversion -std=c99 main.c -o particle_sim.exe -lraylib -lopengl32 -lgdi32 -lwinmm
 ```
+
+## 🎮 Controls
+
+| Key   | Action                       |
+| ----- | ---------------------------- |
+| **B** | Add 10 particles (max 200)   |
+| **N** | Remove 10 particles (min 10) |
+
+## Inspired by
+
+[Particle Physics Simulation Video](https://www.youtube.com/watch?v=7CM0dbib-Jw)
