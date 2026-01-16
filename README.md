@@ -11,7 +11,7 @@ https://samaksh-exe.github.io/Particle-Simulation/dist/particle_sim.html
 
 ### 💻 Download EXE Version
 
-Download the latest Windows executable from [Releases](https://github.com/SaMaKsH.exe/Particle-Simulation/releases)
+Download the latest Windows executable from [Releases](https://github.com/SaMaKsH-exe/Particle-Simulation/releases)
 
 ## 🛠️ Build from Source
 
