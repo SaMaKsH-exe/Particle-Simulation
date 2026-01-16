@@ -1,5 +1,6 @@
 #include "raylib.h"
 #include <time.h>
+#include <stdio.h>
 
 #define num_particles 30
 #define screenWidth 800
@@ -34,7 +35,10 @@ void UpdateParticle(Particle *particle){
         particle->y = screenHeight - particle->r;
         particle->vy = -particle->vy;
     }
-
+    Particle otherParticle;
+    for (int i = 0; i < num_particles; i++){
+        otherParticle = particles[i];
+    }
     }
 
 void DrawParticle(Particle *particle){
@@ -56,6 +60,29 @@ void UpdateParticles(){
     }
 }
 
+void CollideAllParticles(){
+    for (int i = 0; i < num_particles; i++){
+        for (int j = 0; j < num_particles; j++){
+            if(i==j)
+                break;; // skip self
+            
+
+            Particle p1 = particles[i];
+            Particle p2 = particles[j];
+
+            Vector2 c1 = {p1.x, p1.y};
+            Vector2 c2 = {p2.x, p2.y};
+
+            bool collide = CheckCollisionCircles(c1, p1.r, c2, p2.r);
+            
+            if(collide == true){
+                printf("YOOOOOOO\n");
+                fflush(stdout);
+            }
+        }
+    }
+}
+
 void InitParticles(){
 
     SetRandomSeed(time(NULL));
@@ -72,7 +99,7 @@ void InitParticles(){
 }
 
 int main(void)
-{
+    {
 
     InitWindow(screenWidth, screenHeight, "Particle Simulation");
     InitParticles();
@@ -86,6 +113,7 @@ int main(void)
         BeginDrawing();
 
             ClearBackground(BLACK);
+            CollideAllParticles();
             DrawParticles();
             UpdateParticles();
             DrawFPS(5,5);
